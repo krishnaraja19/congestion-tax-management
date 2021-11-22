@@ -1,0 +1,23 @@
+FROM_TIME  ;TO_TIME  ;PRICE  ;CITY_ID  
+06:00:00;06:29:59;8;Gothenburg
+06:30:00;06:59:59;13;Gothenburg
+07:00:00;07:59:59;18;Gothenburg
+08:00:00;08:29:59;13;Gothenburg
+08:30:00;14:59:59;8;Gothenburg
+15:00:00;15:29:59;13;Gothenburg
+15:30:00;16:59:59;18;Gothenburg
+17:00:00;17:59:59;13;Gothenburg
+18:00:00;18:29:59;8;Gothenburg
+18:30:00;23:59:59;0;Gothenburg
+00:00:00;05:59:59;0;Gothenburg
+06:00:00;06:29:59;13;Stockholm
+06:30:00;06:59:59;18;Stockholm
+07:00:00;07:59:59;23;Stockholm
+08:00:00;08:29:59;18;Stockholm
+08:30:00;14:59:59;13;Stockholm
+15:00:00;15:29:59;18;Stockholm
+15:30:00;16:59:59;23;Stockholm
+17:00:00;17:59:59;18;Stockholm
+18:00:00;18:29:59;13;Stockholm
+18:30:00;23:59:59;0;Stockholm
+00:00:00;05:59:59;0;Stockholm
