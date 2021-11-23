@@ -1,6 +1,5 @@
 package com.country.congestiontaxmanagement.configuration;
 
-import com.country.congestiontaxmanagement.model.TollStreaming;
 import com.country.congestiontaxmanagement.service.DataLoader;
 import com.country.congestiontaxmanagement.service.TollDataReader;
 import com.country.congestiontaxmanagement.service.TollStreamingImplementation;
@@ -12,10 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.io.Resource;
-import org.springframework.boot.test.web.client.TestRestTemplate;
 
-import javax.annotation.PostConstruct;
-import java.util.List;
 
 @Configuration
 public class TaxConfiguration {
@@ -39,10 +35,6 @@ public class TaxConfiguration {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
-    @Bean
-    public TestRestTemplate testRestTemplate() {
-        return new TestRestTemplate();
-    }
 
     @EventListener(ApplicationReadyEvent.class)
     public void loadDataBeforeStartup() {
@@ -54,7 +46,5 @@ public class TaxConfiguration {
 
     }
 
-    @Autowired
-    TestRestTemplate testRestTemplate;
 
 }
